@@ -169,7 +169,7 @@ function salvarHistoria() {
     const historia = document.getElementById('historia').value;
     const imagem = document.getElementById('imagem').files[0]
         ? URL.createObjectURL(document.getElementById('imagem').files[0])
-        : '../Imagens/Fundo.jpg';
+        : './Imagens/Fundo.jpg';
     const dataLancamento = new Date().toLocaleDateString();
 
     // Verificar se o campo gênero foi selecionado
